@@ -1,0 +1,32 @@
+:root {
+    /* Colors */
+    --color-primary: #1B365D;
+    /* Deep Blue */
+    --color-accent: #C5A065;
+    /* Gold/Beige Accent */
+    --color-bg: #F5F1E8;
+    /* Cream/Beige Background */
+    --color-text: #2C2C2C;
+    /* Dark Gray for text */
+    --color-white: #FFFFFF;
+
+    /* Typography */
+    --font-heading: 'Lora', serif;
+    --font-body: 'Outfit', sans-serif;
+
+    /* Spacing */
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 2rem;
+    --spacing-xl: 4rem;
+
+    /* Border Radius */
+    --radius-sm: 4px;
+    --radius-md: 8px;
+    --radius-lg: 16px;
+    --radius-full: 999px;
+
+    /* Shadows */
+    --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

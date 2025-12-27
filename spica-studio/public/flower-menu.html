@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flower Menu - Spica Studio</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container navbar">
+            <div class="logo">Spica Studio</div>
+            <div class="menu-toggle">☰</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="coffee-menu.html">Coffee</a></li>
+                <li><a href="flower-menu.html" class="active">Flowers</a></li>
+                <li><a href="workshops.html">Workshops</a></li>
+                <li><a href="reservation.html">Reservation</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="container" style="padding: 4rem 0;">
+        <h1>Flower Menu</h1>
+        <div
+            style="display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 2rem; margin-top: 2rem;">
+            <!-- Flower Item -->
+            <div class="card"
+                style="background: white; border-radius: 8px; overflow: hidden; box-shadow: var(--shadow-sm);">
+                <div style="height: 200px; background-color: #eee;"></div> <!-- Placeholder Image -->
+                <div style="padding: 1rem;">
+                    <h3>Rose Bouquet</h3>
+                    <p style="color: var(--color-accent); font-weight: bold;">500K VND</p>
+                    <p style="font-size: 0.9rem; color: #666;">Classic red roses for romantic occasions.</p>
+                </div>
+            </div>
+            <div class="card"
+                style="background: white; border-radius: 8px; overflow: hidden; box-shadow: var(--shadow-sm);">
+                <div style="height: 200px; background-color: #eee;"></div>
+                <div style="padding: 1rem;">
+                    <h3>Seasonal Mix</h3>
+                    <p style="color: var(--color-accent); font-weight: bold;">350K VND</p>
+                    <p style="font-size: 0.9rem; color: #666;">Fresh seasonal flowers nicely arranged.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
