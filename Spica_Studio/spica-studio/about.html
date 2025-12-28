@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Story - Spica Studio</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .story-section {
+            padding: 6rem 0;
+            display: flex;
+            align-items: center;
+            gap: 4rem;
+        }
+
+        .story-section:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        .story-img {
+            flex: 1;
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            box-shadow: var(--shadow-md);
+        }
+
+        .story-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 1.5s ease;
+        }
+
+        .story-img:hover img {
+            transform: scale(1.05);
+            /* Slow gentle zoom */
+        }
+
+        .story-content {
+            flex: 1;
+            max-width: 500px;
+        }
+
+        .story-content h2 {
+            font-size: 2.2rem;
+            margin-bottom: 1.5rem;
+            font-weight: 400;
+            /* Lighter weight for elegance */
+        }
+
+        .story-content p {
+            font-size: 1.1rem;
+            color: #555;
+            margin-bottom: 1.5rem;
+            font-family: var(--font-heading);
+            /* Using heading font for poetic feel? Or stick to body. Stick to body, maybe italic Lora. */
+        }
+
+        .quote {
+            font-style: italic;
+            border-left: 3px solid var(--color-accent);
+            padding-left: 1.5rem;
+            margin: 2rem 0;
+            color: var(--color-primary);
+        }
+
+        @media (max-width: 768px) {
+            .story-section {
+                flex-direction: column !important;
+                padding: 3rem 0;
+                gap: 2rem;
+            }
+
+            .story-content {
+                max-width: 100%;
+                text-align: center;
+            }
+
+            .quote {
+                border-left: none;
+                border-top: 3px solid var(--color-accent);
+                padding-top: 1rem;
+                padding-left: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container navbar">
+            <a href="index.html" class="logo-link"><img src="assets/images/brand/logo.jpg" alt="Spica Studio"
+                    class="logo-img"></a>
+            <div class="menu-toggle">☰</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="coffee-menu.html">Coffee</a></li>
+                <li><a href="flower-menu.html">Flowers</a></li>
+                <li><a href="workshops.html">Workshops</a></li>
+                <li><a href="reservation.html">Reservation</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <!-- Section 1: Opening / Cafe Interior -->
+        <section class="story-section reveal">
+            <div class="story-img">
+                <img src="assets/images/about/about_cafe_interior_1766889541542.png"
+                    alt="Peaceful cafe interior with morning light">
+            </div>
+            <div class="story-content">
+                <h2>A Sanctuary of Calm</h2>
+                <p>In the heart of the city, there exists a quiet corner where time seems to slow. Spica Studio was born
+                    from a simple desire: to create a space that breathes.</p>
+                <p>Here, the morning light filters softly through the leaves, dancing upon wooden tables. It is a refuge
+                    for the weary, a place where silence is cherished, and every detail invites you to pause.</p>
+            </div>
+        </section>
+
+        <!-- Section 2: Floral Studio -->
+        <section class="story-section reveal">
+            <div class="story-img">
+                <img src="assets/images/about/about_floral_studio_1766889563349.png"
+                    alt="Rustic floral studio with natural textures">
+            </div>
+            <div class="story-content">
+                <h2>Nature's Palette</h2>
+                <p>We believe that beauty lies in the imperfect, the wild, and the natural. Our floral studio is not
+                    just a shop, but an artist's atelier.</p>
+                <p>Guided by the seasons, we gather textures and tones that speak of the earth. From the curve of a stem
+                    to the scent of dried eucalyptus, every arrangement tells a story of life, growth, and fleeting
+                    moments.</p>
+                <div class="quote">"Flowers are the music of the ground. From earth's lips spoken without sound."</div>
+            </div>
+        </section>
+
+        <!-- Section 3: Coffee Moments -->
+        <section class="story-section reveal">
+            <div class="story-img">
+                <img src="assets/images/about/about_coffee_moments_1766889581183.png"
+                    alt="Handcrafted latte next to flowers">
+            </div>
+            <div class="story-content">
+                <h2>The Art of Brewing</h2>
+                <p>Coffee, for us, is a ritual. It is the warmth in your hands on a rainy day, the aroma that awakens
+                    memories.</p>
+                <p>We roast with care and brew with intention. Each cup is a crafted experience, designed to accompany
+                    conversations or solitary reflection. Paired with a simple bloom, it is our offering of comfort to
+                    you.</p>
+            </div>
+        </section>
+
+        <!-- Section 4: Community & Workshop -->
+        <section class="story-section reveal">
+            <div class="story-img">
+                <img src="assets/images/about/about_workshop_community_1766889601144.png"
+                    alt="Creative floral workshop community">
+            </div>
+            <div class="story-content">
+                <h2>Gather & Create</h2>
+                <p>Spica is more than a place; it is a community. We open our doors to dreamers, makers, and quiet
+                    souls.</p>
+                <p>Through our intimate workshops, we invite you to touch the soil, arrange the stems, and find joy in
+                    creating with your hands. In this shared silence, strangers become friends, bonded by the simple act
+                    of making something beautiful.</p>
+            </div>
+        </section>
+
+        <section class="reveal" style="text-align: center; padding: 4rem 0 6rem;">
+            <h3 style="font-size: 1.8rem; font-weight: 300; margin-bottom: 2rem;">Come, stay a while.</h3>
+            <a href="reservation.html" class="btn btn-outline">Reserve a Table</a>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-section">
+                <h3>Spica Studio</h3>
+                <p>28 Thảo Điền, Ho Chi Minh City</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Phone: +84 909 438 830</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <p>
+                    <a href="https://www.facebook.com/profile.php?id=61566329206314" target="_blank"
+                        style="text-decoration: underline;">Facebook</a> |
+                    <a href="https://www.instagram.com/spica.saigon/" target="_blank"
+                        style="text-decoration: underline;">Instagram</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
