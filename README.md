@@ -1,1 +1,0 @@
-# Spica_Studio
